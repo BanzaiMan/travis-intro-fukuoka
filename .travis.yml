@@ -9,6 +9,8 @@ env:
   matrix:
     - RAKE_TASK=echo
     - RAKE_TASK=test
+
+matrix:
   allow_failures:
     - rvm: '2.2'
 
