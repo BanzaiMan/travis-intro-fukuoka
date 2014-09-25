@@ -13,3 +13,7 @@ env:
 script:
   - echo $FOO
   - rake $RAKE_TASK
+
+services:
+  - redis
+  - elasticsearch
