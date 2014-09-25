@@ -3,3 +3,13 @@ language: ruby
 rvm:
   - '1.9.3'
   - '2.2'
+
+env:
+  global: FOO='bar'
+  matrix:
+    - RAKE_TASK=echo
+    - RAKE_TASK=test
+
+script:
+  - echo $FOO
+  - rake $RAKE_TASK
