@@ -1,15 +1,16 @@
 language: ruby
 
-sudo: false
-
 rvm:
   - '1.9.3'
+  - '2.2'
 
 env:
   global: FOO='bar'
   matrix:
     - RAKE_TASK=echo
     - RAKE_TASK=test
+  allow_failures:
+    - rvm: '2.2'
 
 script:
   - echo $FOO
