@@ -20,4 +20,4 @@ services:
   - elasticsearch
 
 addons:
-  - postgresql: "9.3"
+  postgresql: "9.3"
