@@ -2,5 +2,5 @@ task 'echo' do
   puts ENV['foo']
 end
 
-task 'default' do
+task 'test' do
 end
